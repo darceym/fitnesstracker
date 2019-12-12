@@ -52,7 +52,7 @@ $("#previous").empty();{
 $.getJSON("/previous", function(data) {
       for (var i = 0; i < data.length; i++) {
         $("#previous").prepend("<tr><td>" + data[i].new + "</td><td>" + data[i]._id);
-      }
+    }
       $("#previous").prepend("<tr><th>Previous</th></tr>");
 });
 };
