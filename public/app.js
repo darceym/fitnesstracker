@@ -36,3 +36,26 @@ $("#submitNew").on("click", function() {
       );
     return false;
   });
+
+// render the new workouts to the screen
+$("#new").empty();{
+$.getJSON("/new", function(data) {
+  for (var i = 0; i < data.length; i++) {
+    $("#new").prepend("<tr><td>" + data[i].new + "</td><td>" + data[i]._id);
+  }
+  $("#new").prepend("<tr><th>New</th></tr>");
+});
+};
+
+// render the previous workouts to the scree
+$("#previous").empty();{
+$.getJSON("/previous", function(data) {
+      for (var i = 0; i < data.length; i++) {
+        $("#previous").prepend("<tr><td>" + data[i].new + "</td><td>" + data[i]._id);
+      }
+      $("#previous").prepend("<tr><th>Previous</th></tr>");
+});
+};
+
+getNewWorkout();
+getPreviousWorkout();
