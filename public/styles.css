@@ -1,11 +1,12 @@
-#new, #previous {
+#previous {
     width: 40%;
     background-color: antiquewhite;
+    /* float: left; */
   }
-  #new { float: left; }
-  #previous { float: right; }
-  table, td {
-    border-width: 1px;
+/* 
+  #previous { float: left; } */
+  table, td{
+    border-width: 2px;
     border-style: solid;
     border-color: black;
   }

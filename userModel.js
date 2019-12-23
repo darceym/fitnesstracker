@@ -7,7 +7,10 @@ const UserSchema = new Schema({
       type: String,
       trim: true
     },
-
+    reps:{
+      type: String,
+      trim: true
+    },
     previous: {
         type: String,
         trim: true
